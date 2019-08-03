@@ -22,6 +22,7 @@
 		8AEC7C8C22F598A600AB2BB7 /* videoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEC7C8B22F598A600AB2BB7 /* videoClass.swift */; };
 		8AEC7C8E22F599C300AB2BB7 /* customBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEC7C8D22F599C300AB2BB7 /* customBtn.swift */; };
 		8AEC7C9122F5A36800AB2BB7 /* sss.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8AEC7C9022F5A36800AB2BB7 /* sss.mov */; };
+		8AEC7D0922F5DFD600AB2BB7 /* xxx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AEC7D0822F5DFD600AB2BB7 /* xxx.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		8AEC7C8B22F598A600AB2BB7 /* videoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoClass.swift; sourceTree = "<group>"; };
 		8AEC7C8D22F599C300AB2BB7 /* customBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBtn.swift; sourceTree = "<group>"; };
 		8AEC7C9022F5A36800AB2BB7 /* sss.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sss.mov; sourceTree = "<group>"; };
+		8AEC7D0822F5DFD600AB2BB7 /* xxx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xxx.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +128,8 @@
 				8A4BF5DA22F138BB00E804A1 /* LaunchScreen.storyboard */,
 				8A4BF5DD22F138BB00E804A1 /* Info.plist */,
 				8A4BF5D522F138B800E804A1 /* tabBar_App.xcdatamodeld */,
-				8A29826022F4A7BB00F1D9B8 /* sss.mp3 */,
-				8AEC7C9022F5A36800AB2BB7 /* sss.mov */,
+				8AEC7D0B22F5E6B200AB2BB7 /* media */,
+				8AEC7D0A22F5DFE100AB2BB7 /* images */,
 			);
 			path = "tabBar App";
 			sourceTree = "<group>";
@@ -156,6 +158,23 @@
 				8AE94F7822F4A02A00314FEF /* AVFoundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AEC7D0A22F5DFE100AB2BB7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8AEC7D0822F5DFD600AB2BB7 /* xxx.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		8AEC7D0B22F5E6B200AB2BB7 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				8A29826022F4A7BB00F1D9B8 /* sss.mp3 */,
+				8AEC7C9022F5A36800AB2BB7 /* sss.mov */,
+			);
+			path = media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AEC7D0922F5DFD600AB2BB7 /* xxx.jpg in Resources */,
 				8A29826122F4A7BB00F1D9B8 /* sss.mp3 in Resources */,
 				8AEC7C9122F5A36800AB2BB7 /* sss.mov in Resources */,
 				8A4BF5DC22F138BB00E804A1 /* LaunchScreen.storyboard in Resources */,
