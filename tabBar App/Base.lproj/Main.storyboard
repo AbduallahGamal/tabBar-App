@@ -92,21 +92,14 @@
             </objects>
             <point key="canvasLocation" x="2205.7971014492755" y="-83.035714285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--A-->
         <scene sceneID="4KA-rW-kaB">
             <objects>
-                <viewController id="knI-MM-ACE" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UoZ-Xo-DtP">
+                <viewController id="knI-MM-ACE" customClass="A" customModule="tabBar_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UoZ-Xo-DtP" customClass="gradientView" customModule="tabBar_App" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2y-EI-ad1">
-                                <rect key="frame" x="83" y="332" width="249" height="232"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xJe-pE-WV7">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -114,14 +107,85 @@
                                     <navigationItem title="Title" id="rGq-PD-qcL"/>
                                 </items>
                             </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AkM-gE-3gI">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7Zm-To-t9X">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obk-LD-Uc2">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                <state key="normal" image="play"/>
+                                                <connections>
+                                                    <action selector="play:" destination="knI-MM-ACE" eventType="touchUpInside" id="ewv-8p-O2o"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jK-YT-InC">
+                                                <rect key="frame" x="0.0" y="110" width="90" height="90"/>
+                                                <state key="normal" image="mute"/>
+                                                <connections>
+                                                    <action selector="mute:" destination="knI-MM-ACE" eventType="touchUpInside" id="xSy-PY-jGw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8n7-4M-eIM">
+                                        <rect key="frame" x="110" y="0.0" width="90" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhh-Uv-SuK">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                <state key="normal" image="pause"/>
+                                                <connections>
+                                                    <action selector="pause:" destination="knI-MM-ACE" eventType="touchUpInside" id="ksS-MQ-Dwg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tz-LW-GHO">
+                                                <rect key="frame" x="0.0" y="110" width="90" height="90"/>
+                                                <state key="normal" image="lock"/>
+                                                <connections>
+                                                    <action selector="close:" destination="knI-MM-ACE" eventType="touchUpInside" id="MnZ-8Y-v2X"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="BSl-Uq-TYo"/>
+                                    <constraint firstAttribute="width" constant="200" id="a2m-e4-CpQ"/>
+                                </constraints>
+                            </stackView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wcR-el-Fo1">
+                                <rect key="frame" x="105" y="196" width="204" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.95501216590000004" green="1" blue="0.50505526410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sl:" destination="knI-MM-ACE" eventType="valueChanged" id="T3W-ve-yTd"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AkM-gE-3gI" firstAttribute="centerX" secondItem="UoZ-Xo-DtP" secondAttribute="centerX" id="Dgf-Jy-pwR"/>
+                            <constraint firstItem="AkM-gE-3gI" firstAttribute="centerY" secondItem="UoZ-Xo-DtP" secondAttribute="centerY" id="uNk-Tz-jkd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ttv-Iv-OD9"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="0.76094543150000005" green="0.16594669970000001" blue="0.75994083000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="0.43278215180000001" green="0.2580422597" blue="0.90149111680000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="sll" destination="wcR-el-Fo1" id="xOn-VX-oRz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EtC-p5-tca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3277" y="-733"/>
+            <point key="canvasLocation" x="3276.811594202899" y="-733.25892857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mMF-c5-fhh">
@@ -147,29 +211,62 @@
             </objects>
             <point key="canvasLocation" x="3277" y="469"/>
         </scene>
-        <!--View Controller-->
+        <!--Video Class-->
         <scene sceneID="xQP-zP-hSE">
             <objects>
-                <viewController id="FYw-I9-x1N" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7iw-tq-y6e">
+                <viewController id="FYw-I9-x1N" customClass="videoClass" customModule="tabBar_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7iw-tq-y6e" customClass="gradientView" customModule="tabBar_App" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZ8-0d-A4E">
-                                <rect key="frame" x="83" y="332" width="249" height="232"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNz-z0-LNa" customClass="customBtnAdvanced" customModule="tabBar_App" customModuleProvider="target">
+                                <rect key="frame" x="123" y="418" width="168" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="JvA-FO-erz"/>
+                                    <constraint firstAttribute="height" constant="60" id="uZ7-l2-MzT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Play Video">
+                                    <color key="titleColor" red="0.76094543150000005" green="0.16594669970000001" blue="0.75994083000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="a">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="b">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="c">
+                                        <color key="value" red="0.76094543150000005" green="0.16594669970000001" blue="0.75994083000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="play:" destination="FYw-I9-x1N" eventType="touchUpInside" id="fux-4D-yhR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SNz-z0-LNa" firstAttribute="leading" secondItem="9XA-3G-Oym" secondAttribute="leading" constant="123" id="T3P-aP-ICg"/>
+                            <constraint firstItem="SNz-z0-LNa" firstAttribute="top" secondItem="9XA-3G-Oym" secondAttribute="top" constant="330" id="knL-Ml-n0k"/>
+                            <constraint firstItem="9XA-3G-Oym" firstAttribute="trailing" secondItem="SNz-z0-LNa" secondAttribute="trailing" constant="123" id="oK4-o8-N1O"/>
+                            <constraint firstItem="9XA-3G-Oym" firstAttribute="bottom" secondItem="SNz-z0-LNa" secondAttribute="bottom" constant="335" id="t4S-lk-DzU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9XA-3G-Oym"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="0.82508767000000005" green="0.66993674739999998" blue="0.90149111680000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="1" green="0.88210882940000002" blue="0.88935479620000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p5y-AY-mom" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3986" y="-83"/>
+            <point key="canvasLocation" x="3985.507246376812" y="-83.035714285714278"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DAo-VE-wE9">
@@ -227,4 +324,10 @@
             <point key="canvasLocation" x="1295.6521739130435" y="-83.035714285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lock" width="128" height="128"/>
+        <image name="mute" width="128" height="128"/>
+        <image name="pause" width="128" height="128"/>
+        <image name="play" width="128" height="128"/>
+    </resources>
 </document>
