@@ -79,7 +79,7 @@
                                     <color key="titleColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fjs-JX-Cti" kind="show" id="izB-vt-RrM"/>
+                                    <segue destination="c3E-ip-Dzq" kind="show" id="5WP-hk-nx1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -187,30 +187,6 @@
             </objects>
             <point key="canvasLocation" x="3277" y="-794"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="mMF-c5-fhh">
-            <objects>
-                <viewController id="fjs-JX-Cti" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="p95-uI-SPP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3v0-Ry-Zer">
-                                <rect key="frame" x="83" y="332" width="249" height="232"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="n19-Qt-N09"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Laf-ms-yS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4616" y="-794"/>
-        </scene>
         <!--Video Class-->
         <scene sceneID="xQP-zP-hSE">
             <objects>
@@ -268,6 +244,74 @@
             </objects>
             <point key="canvasLocation" x="3955" y="-794"/>
         </scene>
+        <!--Imagee-->
+        <scene sceneID="ujb-GC-One">
+            <objects>
+                <viewController id="c3E-ip-Dzq" customClass="imagee" customModule="tabBar_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cI9-II-GI0" customClass="gradientView" customModule="tabBar_App" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rBG-me-70p">
+                                <rect key="frame" x="26" y="153" width="362" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="362" id="Zgx-RN-gC0"/>
+                                    <constraint firstAttribute="height" constant="213" id="kHt-nJ-TFt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPx-HJ-ki1" customClass="customBtnAdvanced" customModule="tabBar_App" customModuleProvider="target">
+                                <rect key="frame" x="125" y="420" width="165" height="57"/>
+                                <color key="backgroundColor" red="0.32967470910000002" green="0.1974454205" blue="0.70040847090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="dOn-aX-Bed"/>
+                                    <constraint firstAttribute="height" constant="57" id="rLq-gm-Wtr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Pick Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="a">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="b">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="c">
+                                        <color key="value" red="0.82508767000000005" green="0.66993674739999998" blue="0.90149111680000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pickPhoto:" destination="c3E-ip-Dzq" eventType="touchUpInside" id="FmS-LG-2qh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rBG-me-70p" firstAttribute="top" secondItem="cg3-BO-wyh" secondAttribute="top" constant="65" id="97U-2U-PGL"/>
+                            <constraint firstItem="rBG-me-70p" firstAttribute="leading" secondItem="cg3-BO-wyh" secondAttribute="leading" constant="26" id="X5U-wV-cN2"/>
+                            <constraint firstItem="UPx-HJ-ki1" firstAttribute="top" secondItem="rBG-me-70p" secondAttribute="bottom" constant="54" id="e4l-pG-Wgp"/>
+                            <constraint firstItem="cg3-BO-wyh" firstAttribute="trailing" secondItem="rBG-me-70p" secondAttribute="trailing" constant="26" id="h6g-iM-IFp"/>
+                            <constraint firstItem="cg3-BO-wyh" firstAttribute="trailing" secondItem="UPx-HJ-ki1" secondAttribute="trailing" constant="124" id="naw-ww-g5Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cg3-BO-wyh"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="0.82508767000000005" green="0.66993674739999998" blue="0.90149111680000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="img" destination="rBG-me-70p" id="HRU-Um-ecT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tl9-kB-OYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4702.898550724638" y="-795.53571428571422"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DAo-VE-wE9">
             <objects>
@@ -308,6 +352,17 @@
                                     <segue destination="X3M-Zg-fHB" kind="show" id="LZq-Ya-bT1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVa-4y-hOh">
+                                <rect key="frame" x="149" y="352" width="116" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="BB">
+                                    <color key="titleColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fuT-PG-l6n" kind="show" id="FhD-BA-pa5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="x89-EM-nSu"/>
@@ -318,20 +373,89 @@
             </objects>
             <point key="canvasLocation" x="4400" y="643"/>
         </scene>
-        <!--View Controller-->
+        <!--Map Class-->
         <scene sceneID="n8S-i3-eLs">
             <objects>
-                <viewController id="X3M-Zg-fHB" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OEG-QD-hnC">
+                <viewController id="X3M-Zg-fHB" customClass="mapClass" customModule="tabBar_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OEG-QD-hnC" customClass="gradientView" customModule="tabBar_App" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqz-XS-ciD" customClass="customBtnAdvanced" customModule="tabBar_App" customModuleProvider="target">
+                                <rect key="frame" x="158" y="399" width="99" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleColor" red="0.32967470910000002" green="0.1974454205" blue="0.70040847090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="b">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="a">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="mapBtn:" destination="X3M-Zg-fHB" eventType="touchUpInside" id="EaL-gW-tGF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7cZ-mt-qVE"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jC-Cg-HKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4616" y="1373"/>
+            <point key="canvasLocation" x="4615.9420289855079" y="1372.7678571428571"/>
+        </scene>
+        <!--Web View-->
+        <scene sceneID="HLG-cH-oYK">
+            <objects>
+                <viewController id="fuT-PG-l6n" customClass="webView" customModule="tabBar_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6BC-UQ-d1B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KrM-u3-nBs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KrM-u3-nBs" firstAttribute="leading" secondItem="IG0-JN-ZxA" secondAttribute="leading" id="4bj-LV-dnI"/>
+                            <constraint firstItem="KrM-u3-nBs" firstAttribute="trailing" secondItem="IG0-JN-ZxA" secondAttribute="trailing" id="6mT-vu-IPi"/>
+                            <constraint firstAttribute="bottom" secondItem="KrM-u3-nBs" secondAttribute="bottom" id="E9z-TD-RsJ"/>
+                            <constraint firstItem="KrM-u3-nBs" firstAttribute="top" secondItem="6BC-UQ-d1B" secondAttribute="top" id="xHC-gW-rGg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IG0-JN-ZxA"/>
+                    </view>
+                    <connections>
+                        <outlet property="webV" destination="KrM-u3-nBs" id="dHN-9f-Ndx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JR4-Nj-Jee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3953.6231884057975" y="1372.7678571428571"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HAi-eg-lc9">

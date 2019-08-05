@@ -11,9 +11,9 @@ import UIKit
 @IBDesignable
 class customBtnAdvanced: UIButton {
     
-    @IBInspectable var a:CGFloat = 0 {didSet{self.layer.cornerRadius = a}}
+    @IBInspectable var cornerRaduis:CGFloat = 0 {didSet{self.layer.cornerRadius = cornerRaduis}}
     
-    @IBInspectable var b:CGFloat = 0 {didSet{self.layer.borderWidth = b}}
+    @IBInspectable var borderWidth:CGFloat = 0 {didSet{self.layer.borderWidth = borderWidth}}
     
-    @IBInspectable var c:UIColor = UIColor.clear {didSet{self.layer.borderColor = c.cgColor}}
+    @IBInspectable var borderColor:UIColor = UIColor.clear {didSet{self.layer.borderColor = borderColor.cgColor}}
 }

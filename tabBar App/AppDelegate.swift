@@ -17,23 +17,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        
+        // calling of function to run
         self.splashScreen()
-        
         return true
     }
     
     private func splashScreen(){
         let launchScreenVC = UIStoryboard.init(name: "LaunchScreen", bundle: nil)
-        let rootVC = launchScreenVC.instantiateViewController(withIdentifier: "splashController")
+        let rootVC = launchScreenVC.instantiateViewController(withIdentifier: "splashController")// name to controller in storyboard field in splash controller
         self.window?.rootViewController = rootVC
         self.window?.makeKeyAndVisible()
-        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(dismissSplashController), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(dismissSplashController), userInfo: nil, repeats: false)
     }
     
     @objc func dismissSplashController(){
         let mainVC = UIStoryboard.init(name: "Main", bundle: nil)
-        let rootVC = mainVC.instantiateViewController(withIdentifier: "initController")
+        let rootVC = mainVC.instantiateViewController(withIdentifier: "initController") // name to controller in storyboard field in main controller
         self.window?.rootViewController = rootVC
         self.window?.makeKeyAndVisible()
     }

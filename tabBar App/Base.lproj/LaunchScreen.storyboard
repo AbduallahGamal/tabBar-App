@@ -20,13 +20,22 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xxx.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="krQ-Nm-aUY">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;فَرِحِينَ بِمَا آتَاهُمُ اللَّهُ مِن فَضْلِهِ&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kd-Fg-zZe">
+                                <rect key="frame" x="20" y="713" width="374" height="119"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="47"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8Kd-Fg-zZe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0iR-Jq-pqL"/>
                             <constraint firstAttribute="bottom" secondItem="krQ-Nm-aUY" secondAttribute="bottom" id="JB2-es-nGw"/>
                             <constraint firstItem="krQ-Nm-aUY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kxw-1E-DZY"/>
                             <constraint firstItem="krQ-Nm-aUY" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="MaX-S9-lhA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Kd-Fg-zZe" secondAttribute="bottom" constant="30" id="VV9-L5-1Jl"/>
                             <constraint firstItem="krQ-Nm-aUY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lfP-qC-fFc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Kd-Fg-zZe" secondAttribute="trailing" constant="20" id="wLh-Tr-1WD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
