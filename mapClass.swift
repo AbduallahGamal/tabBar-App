@@ -32,7 +32,7 @@ class mapClass: UIViewController {
         let placeMaker = MKPlacemark(coordinate: coordinates)
         let mapItem = MKMapItem(placemark: placeMaker)
         
-        mapItem.name = "My Home"
+        mapItem.name = "My Home Here"
         mapItem.openInMaps(launchOptions: option)
     }
     

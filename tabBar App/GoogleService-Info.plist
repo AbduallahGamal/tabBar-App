@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>572234400150-ib8kicanhics5675sss8eke73l2rcpl2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.572234400150-ib8kicanhics5675sss8eke73l2rcpl2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCAZieuDLZjN1rw4FrWUYzD6F7hP4dsy3o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>572234400150</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>FCI.tabBar-App</string>
+	<key>PROJECT_ID</key>
+	<string>tabbar-3c3ab</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tabbar-3c3ab.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:572234400150:ios:870138b98d10f8a2</string>
+	<key>DATABASE_URL</key>
+	<string>https://tabbar-3c3ab.firebaseio.com</string>
+</dict>
+</plist>

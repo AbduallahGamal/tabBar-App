@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
+import  Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,10 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         
+        // to up the photo during of registeration
+        IQKeyboardManager.shared.enable = true
+        
+        // to define of the login and logout of Users
+        FirebaseApp.configure()
+
         // calling of function to run
-        self.splashScreen()
+        //self.splashScreen()
         return true
     }
     
