@@ -20,6 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // to up the photo during of registeration
         IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.toolbarBarTintColor = .red
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 300
+        //IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "Dismiss"
+        IQKeyboardManager.shared.toolbarTintColor = .white
+        IQKeyboardManager.shared.placeholderFont = UIFont(name: "Futura", size: 20)
+        //IQKeyboardManager.shared.keyboardAppearance = .dark
+        
         
         // to define of the login and logout of Users
         FirebaseApp.configure()

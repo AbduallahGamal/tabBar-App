@@ -21,6 +21,7 @@
 		8A4BF5F222F138BB00E804A1 /* tabBar_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BF5F122F138BB00E804A1 /* tabBar_AppUITests.swift */; };
 		8AA0B2EC22F4972E004E5E4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0B2EB22F4972E004E5E4C /* GradientView.swift */; };
 		8AA0B2EE22F49772004E5E4C /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0B2ED22F49772004E5E4C /* A.swift */; };
+		8ABD4F9F22F9A09A00C99FF4 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABD4F9E22F9A09A00C99FF4 /* login.swift */; };
 		8AE8131722F894BE003766D4 /* currencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8131622F894BE003766D4 /* currencyConverter.swift */; };
 		8AE94F7922F4A02A00314FEF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE94F7822F4A02A00314FEF /* AVFoundation.framework */; };
 		8AE9BCAF22F6C1360077B816 /* mapClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE9BCAE22F6C1360077B816 /* mapClass.swift */; };
@@ -73,6 +74,7 @@
 		8A4BF5F322F138BB00E804A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AA0B2EB22F4972E004E5E4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8AA0B2ED22F49772004E5E4C /* A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A.swift; sourceTree = "<group>"; };
+		8ABD4F9E22F9A09A00C99FF4 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		8AE8131622F894BE003766D4 /* currencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currencyConverter.swift; sourceTree = "<group>"; };
 		8AE94F7822F4A02A00314FEF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8AE9BCAE22F6C1360077B816 /* mapClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapClass.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		8A4BF5C222F138B800E804A1 = {
 			isa = PBXGroup;
 			children = (
+				8ABD4F9E22F9A09A00C99FF4 /* login.swift */,
 				8AE8131622F894BE003766D4 /* currencyConverter.swift */,
 				8AEC39BE22F6F4C200B2DF74 /* webView.swift */,
 				8AE9BCAE22F6C1360077B816 /* mapClass.swift */,
@@ -402,6 +405,7 @@
 				8A4BF5CF22F138B800E804A1 /* AppDelegate.swift in Sources */,
 				8AEC7C8E22F599C300AB2BB7 /* customBtn.swift in Sources */,
 				8AA0B2EC22F4972E004E5E4C /* GradientView.swift in Sources */,
+				8ABD4F9F22F9A09A00C99FF4 /* login.swift in Sources */,
 				8A4BF5D722F138B800E804A1 /* tabBar_App.xcdatamodeld in Sources */,
 				8AEC39BF22F6F4C200B2DF74 /* webView.swift in Sources */,
 				8AECB37822F60BE8005A33F7 /* imagee.swift in Sources */,
